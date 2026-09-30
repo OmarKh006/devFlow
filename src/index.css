@@ -1,1 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import "tailwindcss";
+
+@import "tailwindcss";
+
+:root {
+  /* ---------- Palette (raw values) ---------- */
+
+  /* Neutrals: lightest to darkest */
+  --white: #ffffff;
+  --neutral-100: #f8fafc;
+  --neutral-200: #e2e8f0;
+  --neutral-300: #cbd5e1;
+  --neutral-400: #94a3b8;
+  --neutral-500: #475569;
+  --neutral-600: #1e293b;
+
+  /* Brand */
+  --brand-light: #eef2ff;
+  --brand-medium: #a5b4fc;
+  --brand-base: #4f46e5;
+
+  /* Status */
+  --green-light: #f0fdf4;
+  --green-base: #22c55e;
+  --yellow-light: #fffbeb;
+  --yellow-base: #f59e0b;
+  --red-light: #fff1f2;
+  --red-base: #f43f5e;
+
+  /* ---------- Semantic tokens (by role) ---------- */
+
+  /* Backgrounds */
+  --bg-page: var(--white);
+  --bg-surface: var(--neutral-100);
+
+  /* Borders */
+  --line: var(--neutral-200);
+  --line-strong: var(--neutral-300);
+
+  /* Text */
+  --text-main: var(--neutral-600);
+  --text-body: var(--neutral-500);
+  --text-muted: var(--neutral-400);
+
+  /* Brand */
+  --brand: var(--brand-base);
+  --brand-hover-bg: var(--brand-medium);
+  --brand-soft: var(--brand-light);
+
+  /* Status */
+  --success: var(--green-base);
+  --success-soft: var(--green-light);
+  --warning: var(--yellow-base);
+  --warning-soft: var(--yellow-light);
+  --danger: var(--red-base);
+  --danger-soft: var(--red-light);
+}
+
+@theme inline {
+  --color-page: var(--bg-page);
+  --color-surface: var(--bg-surface);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+
+  --color-main: var(--text-main);
+  --color-body: var(--text-body);
+  --color-muted: var(--text-muted);
+
+  --color-brand: var(--brand);
+  --color-brand-medium: var(--brand-hover-bg);
+  --color-brand-soft: var(--brand-soft);
+
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+}
+
+@theme {
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+}

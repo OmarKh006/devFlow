@@ -1,5 +1,7 @@
+import Register from "./features/register/components/Register";
+
 function App() {
-  return <div className="text-red-500">test</div>;
+  return <Register />;
 }
 
 export default App;
